@@ -1,0 +1,52 @@
+{
+    "template":{
+
+        "widgets": {
+
+            "PushButton":{
+
+                "active": ["QPushButton {border-radius: 25px; color:#f2f2f2;",
+                           "background-color:#3399ff; text-align: left;",
+                           "padding: 0px 0px 0px 25px;}",
+                           "QPushButton:hover {background-color:#66b3ff;}",
+                           "QPushButton:pressed {background-color:#99ccff;}"],
+
+                "disabled": ["QPushButton {border-radius: 25px; color:#bfbfbf;",
+                             "background-color:#3399ff; text-align: left;",
+                             "padding: 0px 0px 0px 25px;}"]
+            },
+
+            "PushButtonIcon":{
+
+                "active": ["QPushButton {border-radius: 25px; color:#f2f2f2;",
+                           "background-color:#3399ff;}",
+                           "QPushButton:hover {background-color:#66b3ff;}",
+                           "QPushButton:pressed {background-color:#99ccff;}"],
+
+                "disabled": ["QPushButton {border-radius: 25px; color:#bfbfbf;}",
+                             "background-color:#3399ff;}"]
+            },
+
+            "CheckBox":{
+
+                "active": ["QCheckBox {border-radius: 25px; color:#f2f2f2;",
+                           "background-color:#3399ff;",
+                           "padding: 0px 25px 0px 0px;}",
+                           "QCheckBox:hover {background-color:#66b3ff;}",
+                           "QCheckBox:pressed {background-color:#99ccff;}"],
+
+                "disabled": ["QCheckBox {border-radius: 25px; color:#bfbfbf;",
+                             "qproperty-iconSize: 25px 25px;}",
+                             "background-color:#3399ff;}"]
+            }
+        },
+
+        "background":{
+
+            "clear": ["* {background: white}"],
+
+            "gradient": ["* {background: qlineargradient( x1:0 y1:1, x2:0 y2:0, ",
+                    "stop:0.05 rgba(171,122,255, 0.7), stop:1 rgba(0,212,255, 1));}"]
+        }
+    }
+}
