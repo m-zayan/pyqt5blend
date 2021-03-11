@@ -7,8 +7,8 @@ __all__ = ['Res', 'Style', 'Icon']
 
 class Res:
 
-    MAIN_DIR = ResManger.get_intersect_path(dirname='pyqt5blend', current=__file__)
-    print(MAIN_DIR)
+    MAIN_DIR = ResManger.get_intersect_path(dirname='pyqt5blend', current=__file__) + '/resources'
+
     IMAGE_DIRS = [OS.join(MAIN_DIR, 'images')]
 
     CONFIG_DIRS = [OS.join(MAIN_DIR, '.config')]
