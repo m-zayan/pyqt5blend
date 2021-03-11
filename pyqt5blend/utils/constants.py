@@ -11,9 +11,9 @@ class Res:
     print(MAIN_DIR)
     IMAGE_DIRS = [OS.join(MAIN_DIR, 'images')]
 
-    CONFIG_DIR = OS.join(MAIN_DIR, '.config')
+    CONFIG_DIRS = [OS.join(MAIN_DIR, '.config')]
 
-    PATH = {'style': OS.join(CONFIG_DIR, 'style.json')}
+    PATH = {'base_style': OS.join(CONFIG_DIRS[0], 'style.json')}
 
     KEY_NAME = ResManger.get_vars_name(Qt, Qt.Key)
 
@@ -41,7 +41,7 @@ class Icon:
 
 class Style:
 
-    DICT = Reader.json_to_dict(Res.PATH['style'])
+    DICT = Reader.json_to_dict(Res.PATH['base_style'])
     TEMPLATE = DICT['template']
 
     SOLID = 'solid'

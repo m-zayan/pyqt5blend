@@ -6,6 +6,8 @@ import os
 import subprocess as process
 from pathlib import Path
 
+import re
+
 import json
 import csv
 
@@ -378,9 +380,9 @@ class Time:
 class ResManger:
 
     @staticmethod
-    def get_intersect_path(dirname, current):
+    def get_intersect_path(dirname, current, index=-1):
 
-        idx = current.find(dirname)
+        idx = list(re.finditer(dirname, current))[index].span()[0]
 
         return current[:idx + len(dirname)]
 
