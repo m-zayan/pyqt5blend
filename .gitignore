@@ -1,2 +1,7 @@
 .idea
 **/__pycache__
+
+**/pyqt5blend.egg-info
+
+**/build
+**/dist
