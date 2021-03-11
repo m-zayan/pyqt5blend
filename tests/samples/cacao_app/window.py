@@ -1,7 +1,7 @@
-from utils.constants import Style, Icon
+from pyqt5blend.utils.constants import Style, Icon
 
-from api.gui import widgets
-from api.gui.pages import Page
+from pyqt5blend.api.gui import widgets
+from pyqt5blend.api.gui.pages import Page
 
 __all__ = ['MainWindow', 'ToolsWindow', 'TensorPlotPage',
            'GeoDashboardPage', 'HessianMatrixPage', 'LatexGeneratorPage']

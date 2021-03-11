@@ -1,5 +1,6 @@
-from api.common import OS, Reader, ResManger
 from PyQt5.QtCore import Qt
+
+from ..api.common import OS, Reader, ResManger
 
 __all__ = ['Res', 'Style', 'Icon']
 
@@ -7,8 +8,8 @@ __all__ = ['Res', 'Style', 'Icon']
 class Res:
 
     MAIN_DIR = ResManger.get_intersect_path(dirname='pyqt5blend', current=__file__)
-
-    IMAGES_DIR = OS.join(MAIN_DIR, 'images')
+    print(MAIN_DIR)
+    IMAGE_DIRS = [OS.join(MAIN_DIR, 'images')]
 
     CONFIG_DIR = OS.join(MAIN_DIR, '.config')
 
@@ -26,7 +27,9 @@ class Icon:
 
         if filename not in Res.PATH:
 
-            Res.PATH[filename] = OS.join(Res.IMAGES_DIR, filename)
+            img_dir = OS.file_at(filename, Res.IMAGE_DIRS)
+
+            Res.PATH[filename] = OS.join(img_dir, filename)
 
         return Res.PATH[filename]
 

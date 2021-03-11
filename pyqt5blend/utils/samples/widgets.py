@@ -4,8 +4,8 @@ from typing import Tuple, Dict, Union
 
 from PyQt5.QtWidgets import QApplication
 
-from api.gui.widgets import Window, Logger
-from api.gui.pages import Page
+from ...api.gui.widgets import Window, Logger
+from ...api.gui.pages import Page
 
 __all__ = ['Application']
 

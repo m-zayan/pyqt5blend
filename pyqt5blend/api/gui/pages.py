@@ -3,7 +3,7 @@ from typing import Union
 from PyQt5.QtCore import Qt
 from PyQt5.QtGui import QKeyEvent
 
-from api.gui.widgets import *
+from .widgets import *
 
 __all__ = ['Page']
 

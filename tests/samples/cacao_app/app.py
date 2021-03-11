@@ -1,7 +1,7 @@
-from utils.constants import Style
-from utils.samples.widgets import Application
+from pyqt5blend.utils.constants import Style
+from pyqt5blend.utils.samples.widgets import Application
 
-from .window import MainWindow, ToolsWindow
+from tests.samples.cacao_app.window import MainWindow, ToolsWindow
 
 __all__ = ['CacaoApp']
 

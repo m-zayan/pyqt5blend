@@ -1,7 +1,7 @@
-from utils.samples.widgets import Application
-from utils.samples.pages import VideoStreamPage, Paint2DPage
+from pyqt5blend.utils.samples.widgets import Application
+from pyqt5blend.utils.samples.pages import VideoStreamPage, Paint2DPage
 
-from .window import MainWindow
+from tests.samples.multimedia_app.window import MainWindow
 
 __all__ = ['MultimediaApp']
 

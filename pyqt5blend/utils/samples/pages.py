@@ -2,12 +2,12 @@ from PyQt5.QtCore import Qt
 from PyQt5.QtWidgets import QGridLayout
 from PyQt5.QtGui import QPixmap, QKeyEvent
 
-from utils.constants import Style
+from ...utils.constants import Style
 
-from api.gui.widgets import *
-from api.gui.pages import Page
+from ...api.gui.widgets import *
+from ...api.gui.pages import Page
 
-from api.streams import VideoStream
+from ...api.streams import VideoStream
 
 
 __all__ = ['VideoStreamPage', 'Paint2DPage', 'Paint3DPage']

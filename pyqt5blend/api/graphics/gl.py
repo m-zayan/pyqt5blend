@@ -2,7 +2,7 @@ from OpenGL.GL import *
 from OpenGL.GL import shaders
 from OpenGL.arrays import vbo
 
-from api.handlers.exceptions import CoreGraphicsAPIError
+from ..handlers.exceptions import CoreGraphicsAPIError
 
 __all__ = ['GLContext', 'DrawMode']
 

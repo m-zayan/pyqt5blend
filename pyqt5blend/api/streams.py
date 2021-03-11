@@ -4,7 +4,7 @@ import numpy as np
 from PyQt5.QtCore import Qt, QThread
 from PyQt5.QtGui import QImage
 
-from api.common import Time, Writer, OS, Logger
+from .common import Time, Writer, OS, Logger
 
 __all__ = ['VideoStream']
 

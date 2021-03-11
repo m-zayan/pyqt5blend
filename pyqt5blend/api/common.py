@@ -18,7 +18,7 @@ import time
 
 import traceback
 
-from api.handlers.exceptions import InvalidConfigurations
+from .handlers.exceptions import InvalidConfigurations
 
 __all__ = ['Logger', 'OS', 'Sys', 'Reader', 'Writer', 'Time', 'ResManger']
 
@@ -135,6 +135,17 @@ class OS:
     def join(p1, p2):
 
         return os.path.join(p1, p2)
+
+    @staticmethod
+    def file_at(filename, dirs_list):
+
+        for i in range(len(dirs_list)):
+
+            if filename in os.listdir(dirs_list[i]):
+
+                return dirs_list[i]
+
+        raise ValueError(f'file : {filename}, is not found')
 
     @staticmethod
     def locate_file(pattern, params: str = '', updatedb=False):

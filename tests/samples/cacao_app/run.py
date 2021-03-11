@@ -1,4 +1,4 @@
-from tests.samples.cacao_app.app import CacaoApp
+from pyqt5blend.tests.samples.cacao_app.app import CacaoApp
 
 config = {'full_screen': False, 'fixed_size': True}
 

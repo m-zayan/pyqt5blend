@@ -1,4 +1,4 @@
-from api.gui.widgets import Window
+from pyqt5blend.api.gui.widgets import Window
 
 __all__ = ['MainWindow']
 

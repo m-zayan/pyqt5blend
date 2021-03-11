@@ -1,4 +1,4 @@
-from utils.constants import Icon
+from ...utils.constants import Icon
 import os
 
 print(Icon.png('previous'))

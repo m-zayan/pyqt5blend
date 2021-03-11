@@ -5,7 +5,7 @@ from PyQt5.QtGui import QMoveEvent, QResizeEvent, QPixmap, QColor, QIcon, QKeyEv
 from PyQt5.QtCore import Qt, QSize, QLoggingCategory, QtMsgType, \
                          QtDebugMsg, QtInfoMsg, QtCriticalMsg, QtWarningMsg, QtFatalMsg
 
-from api.common import OS
+from ..common import OS
 
 __all__ = ['Widget', 'Label', 'PushButton', 'CheckBox', 'Window',
            'Painter', 'Pen', 'Brush', 'GraphicsView', 'GraphicsScene',
